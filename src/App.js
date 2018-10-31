@@ -13,13 +13,16 @@ class App extends Component {
         this.setState({job: '前端'});
     };
 
+    handleGetName = (name) => {
+        console.log('App: ', name);
+    };
 
 
     render() {
         const {job} = this.state;
         return (
             <div className="App">
-                <UserList className="user-list" job={job}/>
+                <UserList className="user-list" job={job} getName={this.handleGetName}/>
                 <button onClick={this.handleJobClick}>换工作</button>
                 <UserDetail name="李四" age={23} job="前端"/>
             </div>
