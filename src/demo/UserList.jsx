@@ -16,6 +16,10 @@ export default class UserList extends Component {
 
     componentDidMount() {
         console.log('didMount');
+<<<<<<< HEAD
+=======
+        console.log(this.ol);
+>>>>>>> master
         setTimeout(() => {
             // ajax 请求成功
             const res = {
@@ -52,14 +56,37 @@ export default class UserList extends Component {
         console.log('componentDidUpdate');
     }
 
+<<<<<<< HEAD
+=======
+    handleSendName = () => {
+        const {getName} = this.props;
+        getName('我是UserList 的name');
+
+    };
+
+    handleInputChange = (e) => {
+        const {value} = e.target;
+        console.log(value);
+    };
+
+>>>>>>> master
     render() {
         console.log('render');
         const {users} = this.state;
         const {job, className} = this.props;
         return (
             <div id="root-div" className={className}>
+<<<<<<< HEAD
                 我的工作是：{job}
                 <ol>
+=======
+
+                <input type="text" onChange={this.handleInputChange}/>
+
+                <button onClick={this.handleSendName}>给父组件name</button>
+                我的工作是：{job}
+                <ol ref={node => this.ol = node}>
+>>>>>>> master
                     {users.map(item => {
                         return (<li key={item.id}>姓名：{item.name}</li>);
                     })}
