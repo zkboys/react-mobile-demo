@@ -30,6 +30,7 @@ class App extends Component {
                     style={{color: 'green', background: 'yellow'}}
                     className="test-btn"
                     onClick={this.handleBtnClick}
+                    title="按钮"
                 >我是按钮</Button>
 
 

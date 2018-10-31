@@ -17,13 +17,13 @@ export default class Button extends Component {
         return (
             <div
                 style={{
+                    ...style,
                     color: 'red',
                     display: 'inline-block',
                     padding: '10px 20px',
                     border: '1px solid #ccc',
                     borderRadius: '5px',
                     cursor: 'pointer',
-                    ...style,
                 }}
                 {...others}
             >
