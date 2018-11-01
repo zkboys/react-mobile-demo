@@ -1,0 +1,24 @@
+.title-block {
+    text-align: center;
+    height:54px;
+    display: block;
+}
+.title_icon {
+    width:74px;
+    height:17px;
+}
+.title_text {
+    color: #D1A646;
+    font-size:14px;
+    padding-right:28px;
+    padding-left:28px;
+}
+.category-block {
+    width:170px;
+    height:909px;
+    background:#F6F6F6;
+}
+.dishItem-block {
+    width:542px;
+    display:block;
+}

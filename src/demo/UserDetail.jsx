@@ -6,6 +6,7 @@ export default class UserDetail extends Component {
         job: 'IT',
     };
 
+    //props校验验证
     static propTypes = {
         name: PropTypes.string.isRequired,
         age: PropTypes.number.isRequired,
