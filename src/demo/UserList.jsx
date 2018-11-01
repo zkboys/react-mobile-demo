@@ -56,7 +56,6 @@ export default class UserList extends Component {
     handleSendName = () => {
         const {getName} = this.props;
         getName('我是UserList 的name');
-
     };
 
     handleInputChange = (e) => {
