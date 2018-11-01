@@ -1,27 +1,49 @@
 import React, {Component} from 'react';
-import UserList from './demo/UserList';
-import UserDetail from './demo/UserDetail';
+import Head from './demo/Head';
+import Banner from './demo/Banner';
+import Main from './demo/Main';
+import Footer_shop from './demo/Footer_shop';
+import dish1 from './demo/images/dish1.png';
+import dish2 from './demo/images/dish1.png';
+
 import './App.css';
+import Category from "./demo/Category";
 
 class App extends Component {
-    state = {
-        job: 'IT',
-    };
 
-    // 换工作 点击事件
-    handleJobClick = () => {
-        this.setState({job: '前端'});
-    };
+       state = {
+           dataSource: [],
+           cateGory: [],
+       }
 
-
+    componentWillMount()
+    {
+        this.setState({
+            dateSource: [
+                {img: dish1, text: '大螃蟹'},
+                {img: dish2, text: '大龙虾'},
+            ],
+            cateGory: [
+                {text: '午市套餐'},
+                {text: '镇店之宝'},
+                {text: '人气湘味'},
+                {text: '开胃凉菜'},
+                {text: '凉菜类'},
+            ],
+        })
+    }
 
     render() {
-        const {job} = this.state;
+           const {dateSource, cateGory} = this.state;
         return (
-            <div className="App">
-                <UserList className="user-list" job={job}/>
-                <button onClick={this.handleJobClick}>换工作</button>
-                <UserDetail name="李四" age={23} job="前端"/>
+            <div>
+               <Head >今日热点</Head>
+                <Banner dateSource={dateSource}></Banner>
+                <div className="main">
+                  <Category cateGory={cateGory}></Category>
+                    <Main></Main>
+                </div>
+                <Footer_shop></Footer_shop>
             </div>
         );
     }
