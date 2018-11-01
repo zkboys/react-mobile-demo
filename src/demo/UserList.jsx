@@ -1,9 +1,8 @@
 import React, {Component} from 'react';
 
 export default class UserList extends Component {
-    constructor(props) {
-        super();
-        console.log('constructor');
+    constructor(props) {//可以做一些初始化
+        super();//必须写
     }
 
     state = {
@@ -16,6 +15,7 @@ export default class UserList extends Component {
 
     componentDidMount() {
         console.log('didMount');
+        console.log(this.ol);
         setTimeout(() => {
             // ajax 请求成功
             const res = {
@@ -52,14 +52,29 @@ export default class UserList extends Component {
         console.log('componentDidUpdate');
     }
 
+    handleSendName = () => {
+        const {getName} = this.props;
+        getName('我是UserList 的name');
+
+    };
+
+    handleInputChange = (e) => {
+        const {value} = e.target;
+        console.log(value);
+    };
+
     render() {
         console.log('render');
         const {users} = this.state;
         const {job, className} = this.props;
         return (
             <div id="root-div" className={className}>
+
+                <input type="text" onChange={this.handleInputChange}/>
+
+                <button onClick={this.handleSendName}>给父组件name</button>
                 我的工作是：{job}
-                <ol>
+                <ol ref={node => this.ol = node}>
                     {users.map(item => {
                         return (<li key={item.id}>姓名：{item.name}</li>);
                     })}

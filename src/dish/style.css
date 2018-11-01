@@ -1,0 +1,59 @@
+/*组件Title页*/
+.title-block{
+    padding:20px 0;
+    text-align: center;
+}
+.title-text{
+    font-size:14px;
+    color:#D1A646;
+    padding:0 34px;
+}
+
+/*组件Banner页*/
+.banner_block{
+    padding-left:15px;
+    padding-bottom:11px;
+    overflow: hidden;
+}
+.banner_item{
+    position:relative;
+    float: left;
+    padding-right:5px;
+
+}
+.banner_item_pic{
+    width:145px;
+    height:95px;
+}
+.banner_item_tit{
+    width:145px;
+    line-height:24px;
+    background:rgba(0,0,0,0.63);
+    color:#FFFFFF;
+    font-size:14px;
+    position: absolute;
+    bottom:4px;
+    left:0;
+    text-align: center;
+}
+
+/*菜单栏*/
+.category{
+    width:20%;
+    float: left;
+}
+.category_item{
+    line-height:50px;
+    background:rgba(246,246,246,1);
+    color:#333;
+    font-size:14px;
+    text-align: center;
+}
+
+/*菜品列表*/
+.DishItem_block{
+    width:80%;
+}
+.Dish_item{
+    height:100px;
+}
