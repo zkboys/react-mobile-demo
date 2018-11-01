@@ -17,6 +17,7 @@ export default class UserList extends Component {
     componentDidMount() {
         console.log('didMount');
         console.log(this.ol);
+        console.log(this.rootDiv);
         setTimeout(() => {
             // ajax 请求成功
             const res = {
@@ -69,16 +70,16 @@ export default class UserList extends Component {
         const {users} = this.state;
         const {job, className} = this.props;
         return (
-            <div id="root-div" className={className}>
-
+            <div
+                className={className}
+                ref={(node) => this.rootDiv = node}
+            >
                 <input type="text" onChange={this.handleInputChange}/>
 
                 <button onClick={this.handleSendName}>给父组件name</button>
                 我的工作是：{job}
                 <ol ref={node => this.ol = node}>
-                    {users.map(item => {
-                        return (<li key={item.id}>姓名：{item.name}</li>);
-                    })}
+                    {users.map((item) => (<li key={item.id}>姓名：{item.name}</li>))}
                 </ol>
             </div>
         );

@@ -1,14 +1,21 @@
 import React, {Component} from 'react';
 
 export default class Button extends Component {
-    state = {};
+    state = {
+        name: '',
+        age: 2,
+    };
 
     componentWillMount() {
-
+        this.setState({name: '111'});
     }
 
     componentDidMount() {
 
+    }
+
+    handleClick = () => {
+        this.setState({age: 11});
     }
 
     render() {

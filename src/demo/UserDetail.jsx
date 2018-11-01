@@ -9,6 +9,7 @@ export default class UserDetail extends Component {
     static propTypes = {
         name: PropTypes.string.isRequired,
         age: PropTypes.number.isRequired,
+        job: PropTypes.string,
     };
 
     state = {};
