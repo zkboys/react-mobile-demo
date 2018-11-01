@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
-import Dish from './dish/Index';
+import UserEidt from './user/UserEidt';
 import './App.css';
 
 class App extends Component {
 
     render() {
         return (
-            <Dish/>
+            <UserEidt/>
         );
     }
 }
