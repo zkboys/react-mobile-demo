@@ -6,6 +6,7 @@ export default class UserList extends Component {
         console.log('constructor');
     }
 
+    //state表示自己储存的数据
     state = {
         users: [],
     };
@@ -16,6 +17,7 @@ export default class UserList extends Component {
 
     componentDidMount() {
         console.log('didMount');
+        console.log(this.oll);
         setTimeout(() => {
             // ajax 请求成功
             const res = {
@@ -28,7 +30,9 @@ export default class UserList extends Component {
                 }
             };
 
+            //将ajax传入的数据交给userList
             const {userList} = res.data;
+            //将数据交给state，表示子组件自己的数据 setState的作用可以做到只要数据变化就会重新渲染
             this.setState({users: userList});
         }, 1500);
     }
@@ -52,14 +56,31 @@ export default class UserList extends Component {
         console.log('componentDidUpdate');
     }
 
+    handleSendName = () => {
+        const {getName} = this.props;
+        console.log(getName);
+        //function (name) {
+        //    console.log('App: ', name);
+        //}
+        //App.js:18 App:  我是UserList 的name
+        getName('我是UserList 的name');
+    };
+
+    handleInputChange = (e) => {
+        const {value} = e.target;
+        console.log(value);
+    };
+
     render() {
         console.log('render');
         const {users} = this.state;
         const {job, className} = this.props;
         return (
             <div id="root-div" className={className}>
+                <input type="text" onChange={this.handleInputChange}/>
+                <button onClick={this.handleSendName}>给父组件name</button>
                 我的工作是：{job}
-                <ol>
+                <ol ref={node => this.oll = node}>
                     {users.map(item => {
                         return (<li key={item.id}>姓名：{item.name}</li>);
                     })}
