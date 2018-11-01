@@ -34,10 +34,10 @@ export default class UserList extends Component {
     }
 
     componentWillReceiveProps(nextProps) {
-        console.log('componentWilReceiveProps');
-        console.log('this.props: ', this.props);
-        console.log('nextProps: ', nextProps);
-    }
+    console.log('componentWilReceiveProps');
+    console.log('this.props: ', this.props);
+    console.log('nextProps: ', nextProps);
+ }
 
     shouldComponentUpdate(nextProps, nextState) {
         console.log('shouldComponentUpdate');

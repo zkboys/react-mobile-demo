@@ -1,0 +1,25 @@
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+.title-root{
+    text-align: center;
+}
+.title-text{
+    text-align: center;
+    font-size: 18px;
+    color:#D1A646;
+    margin: 0 34px;
+}
+.banner{
+    margin-top: 10px;
+
+}
+.banner img{
+    width:140px;
+    height:88px;
+    float: left;
+    margin-right: 10px;
+
+}
