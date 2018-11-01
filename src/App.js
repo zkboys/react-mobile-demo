@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+<<<<<<< Updated upstream
 import UserList from './demo/UserList';
 import UserDetail from './demo/UserDetail';
 import './App.css';
@@ -23,6 +24,16 @@ class App extends Component {
                 <button onClick={this.handleJobClick}>换工作</button>
                 <UserDetail name="李四" age={23} job="前端"/>
             </div>
+=======
+import Index from "./wangsiyu/Index.jsx";
+
+
+class App extends Component {
+
+    render(){
+        return(
+            <Index />
+>>>>>>> Stashed changes
         );
     }
 }
