@@ -6,7 +6,7 @@ import minus from "./images/minus.png"
 
 export default class DishItem extends Component {
     state = {};
-    
+
     componentDidMount() {
 
     }
