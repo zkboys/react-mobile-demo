@@ -12,14 +12,11 @@ export default class UserList extends Component {
 
     componentWillMount() {
         console.log('willMount');
-    }
+    };
 
     componentDidMount() {
         console.log('didMount');
-<<<<<<< HEAD
-=======
         console.log(this.ol);
->>>>>>> master
         setTimeout(() => {
             // ajax 请求成功
             const res = {
@@ -35,29 +32,27 @@ export default class UserList extends Component {
             const {userList} = res.data;
             this.setState({users: userList});
         }, 1500);
-    }
+    };
 
     componentWillReceiveProps(nextProps) {
         console.log('componentWilReceiveProps');
         console.log('this.props: ', this.props);
         console.log('nextProps: ', nextProps);
-    }
+    };
 
     shouldComponentUpdate(nextProps, nextState) {
         console.log('shouldComponentUpdate');
         return true;
-    }
+    };
 
     componentWillUpdate() {
         console.log('componentWillUpdate');
-    }
+    };
 
     componentDidUpdate() {
         console.log('componentDidUpdate');
-    }
+    };
 
-<<<<<<< HEAD
-=======
     handleSendName = () => {
         const {getName} = this.props;
         getName('我是UserList 的name');
@@ -68,25 +63,17 @@ export default class UserList extends Component {
         const {value} = e.target;
         console.log(value);
     };
-
->>>>>>> master
     render() {
         console.log('render');
         const {users} = this.state;
         const {job, className} = this.props;
         return (
             <div id="root-div" className={className}>
-<<<<<<< HEAD
                 我的工作是：{job}
-                <ol>
-=======
-
                 <input type="text" onChange={this.handleInputChange}/>
-
                 <button onClick={this.handleSendName}>给父组件name</button>
                 我的工作是：{job}
                 <ol ref={node => this.ol = node}>
->>>>>>> master
                     {users.map(item => {
                         return (<li key={item.id}>姓名：{item.name}</li>);
                     })}

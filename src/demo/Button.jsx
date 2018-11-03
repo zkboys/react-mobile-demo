@@ -6,7 +6,6 @@ export default class Button extends Component {
     componentWillMount() {
 
     }
-
     componentDidMount() {
 
     }

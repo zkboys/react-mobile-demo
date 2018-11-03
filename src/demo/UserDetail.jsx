@@ -2,11 +2,11 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 
 export default class UserDetail extends Component {
-    static defaultProps = {
+    static defaultProps = { //设置默认属性
         job: 'IT',
     };
 
-    static propTypes = {
+    static propTypes = {  //
         name: PropTypes.string.isRequired,
         age: PropTypes.number.isRequired,
     };

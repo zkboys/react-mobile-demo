@@ -8,13 +8,13 @@ import './Style.css';
 
 export default class Title extends Component {
     static defaultprops = {
-      children:PropTypes.string.isRequired
+        children:PropTypes.string.isRequired
     };
     state = {};
     render(){
         const {children} = this.props;
         return (
-            <div className="title">
+            <div className="food-title">
                 <img className="title-icon-left" src={Left} alt="左图"/>
                 <span className="title-text">{children}</span>
                 <img className="title-icon-right" src={Right} alt="右图"/>
