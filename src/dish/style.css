@@ -1,0 +1,240 @@
+/*top*/
+.top{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 83px;
+    background-color: #000000;
+    color: #D1A646;
+    font-size: 16px;
+}
+.top-back{
+    position: absolute;
+    left: 17px;
+    top: 34px;
+}
+.top-close{
+    position: absolute;
+    left: 75px;
+    top: 34px;
+}
+.top-name{
+    position: absolute;
+    left: 42%;
+    top: 34px;
+    font-size: 18px;
+}
+.top-more{
+    position: absolute;
+    right: 49px;
+    top: 34px;
+}
+/*title*/
+.title{
+    text-align: center;
+    padding: 10px 0px 15px 0px;
+    position: fixed;
+    left: 0px;
+    top: 80px;
+    width: 100%;
+    background-color: #ffffff;
+}
+.icon-title{
+    width: 74px;
+    height: 17px;
+}
+.title-name{
+    padding: 0px 34px;
+}
+/*banner*/
+.banner{
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    top:126px;
+    left: 0px;
+    background-color: #ffffff;
+}
+.banner-item{
+    width: 35%;
+    margin: 0px 0px 10px 10px;
+    height:80px;
+    float: left;
+    position: relative;
+}
+.banner-item-img{
+    width:100%;
+    height:100%;
+}
+.banner-item-title{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    font-size: 12px;
+    background:rgba(0,0,0,1);
+    opacity:0.63;
+    color: #ffffff;
+    height: 24px;
+    width: 100%;
+    line-height: 24px;
+    text-align: center;
+}
+.category{
+    background: rgba(246,246,246,1);
+    position: fixed;
+    left: 0px;
+    top: 216px;
+    font-size: 14px;
+    color: #939597;
+    width: 30%;
+    margin-top: 10px;
+}
+.category_item{
+    /*padding: 31px 0px 36px 0px;*/
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    border-bottom: solid 1px rgba(211,211,211,1);
+    text-align: center;
+}
+.category_item_first{
+    background-color: #ffffff;
+    height: 60px;
+    line-height: 60px;
+    border-bottom: solid 1px rgba(211,211,211,1);
+    text-align: center;
+    display: block;
+}
+/**/
+.cartBar{
+    position: fixed;
+    height: 64px;
+    line-height: 64px;
+    width: 100%;
+    left: 0px;
+    bottom: 0px;
+    background: rgba(52,60,63,1);
+    font-size: 16px;
+    color: #ffffff;
+}
+.cartBar_empty{
+    display: inline-block;
+    width: 75%;
+    text-align: center;
+}
+.cartBar_ok{
+    background-color: #ED3E39;
+    text-align: center;
+    width: 25%;
+    display: inline-block;
+}
+.cartBar_icon{
+    position: absolute;
+    left: 43px;
+    bottom: 37px;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-color: #2C3437;
+    border-radius: 50%;
+    text-align:center;
+}
+.cartBar_icon_img{
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    vertical-align:middle;
+}
+
+
+/**/
+.dishItem{
+    margin-left: 2%;
+    width: 68%;
+    position: absolute;
+    right: 0px;
+    z-index: -999;
+    top:255px;
+}
+.dishItem_item{
+    padding: 15px 0px 0px 0px;
+    overflow: hidden;
+    border-bottom: solid 1px rgba(211,211,211,1);
+}
+.dishItem_item_imgDiv{
+    width: 50%;
+    float: left;
+}
+.dishItem_item_img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.dishItem_item_words{
+    padding-left: 10px;
+    display: inline-block;
+    width: 40%;
+    padding-bottom: 10px;
+}
+.dishItem_item_title{
+    font-size: 14px;
+    white-space:initial;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    padding: 0px;
+    margin: 0px;
+}
+.dishItem_item_price{
+    color: #ED3E39;
+    font-size: 18px;
+    padding: 0px;
+    margin: 0px;
+}
+.dishItem_item_but{
+    text-align: right;
+}
+.Btn_min{
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+}
+.Btn_add{
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+}
+.Btn_num{
+    border: none;
+    display: inline-block;
+    width: 20px;
+    text-align: center;
+}
+
+
+/**/
+.dishItem_title{
+    top: 215px;
+    right: 0px;
+    text-align: center;
+    padding: 20px 0px 10px 2%;
+    position: fixed;
+    width: 68%;
+    background-color: #ffffff;
+}
+.Title_title{
+    text-align: center;
+    padding: 10px 0px 15px 0px;
+    position: fixed;
+    left: 0px;
+    top: 80px;
+    width: 100%;
+    background-color: #ffffff;
+}
