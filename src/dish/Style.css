@@ -2,6 +2,8 @@
 .title{
     min-width:320px;
     max-width:640px;
+    position:fixed;
+    top:-4px;
     text-align: center;
     padding:5px 0;
 }
@@ -27,6 +29,9 @@
 }
 .banner-block{
     width:100000px;
+    position: fixed;
+    top:25px;
+    z-index:10;
     height:85px;
     border-bottom: 6px solid #F6F6F6;
 }
@@ -58,6 +63,7 @@
     padding:0;
     position:fixed;
     left:0;
+    top:145px;
 }
 .nav-item{
     width:73px;
@@ -69,13 +75,15 @@
     text-align: center;
     line-height: 43px;
 }
-.nav-item:hover{
+.nav li:hover{
+    width:73px;
+    height:43px;
     background:#fff;
 }
 /*优惠套餐*/
 .food-title{
-    position:relative;
-    top:-15px;
+    position: absolute;
+    top: 145px;
     left:128px;
     margin-top: -22px;
 }
@@ -83,6 +91,10 @@
 .dish-img{
     width:85px;
     height:57px;
+}
+.food-list{
+    position:absolute;
+    top:145px;
 }
 .food-lists{
     margin-left: 81px;

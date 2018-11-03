@@ -12,7 +12,7 @@ export default class DishImg extends Component{
     render(){
         const {imgData} = this.props;
         return (
-            <div>
+            <div className="food-list">
                 {imgData.map(item => {
                     return (
                         <div className="food-lists">
