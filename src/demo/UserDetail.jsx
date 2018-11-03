@@ -8,7 +8,7 @@ export default class UserDetail extends Component {
 
     static propTypes = {
         name: PropTypes.string.isRequired,
-        age: PropTypes.number.isRequired,
+        age: PropTypes.number.isRequired
     };
 
     state = {};

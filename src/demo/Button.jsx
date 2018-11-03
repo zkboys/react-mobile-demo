@@ -14,6 +14,7 @@ export default class Button extends Component {
     render() {
         const {children, style, ...others} = this.props;
         console.log(others);
+        console.log('aa',{...others});//把对象里面的值列举出来
         return (
             <div
                 style={{
@@ -23,7 +24,7 @@ export default class Button extends Component {
                     padding: '10px 20px',
                     border: '1px solid #ccc',
                     borderRadius: '5px',
-                    cursor: 'pointer',
+                    cursor: 'pointer'
                 }}
                 {...others}
             >
@@ -32,3 +33,4 @@ export default class Button extends Component {
         );
     }
 }
+
