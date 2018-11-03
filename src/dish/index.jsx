@@ -57,7 +57,6 @@ export default class Index extends Component {
 
     render() {
         const {top,banner,category,cartBar,dishItem}= this.state;
-        //console.log({banner});
         return (
             <div>
                 <Top top={top}></Top>
