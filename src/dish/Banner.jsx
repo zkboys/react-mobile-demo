@@ -7,12 +7,11 @@ export default  class Banner extends Component {
 
     render() {
         const {dataSource} = this.props;
-        console.log(1,this.props)
 
         return (
             <div className="banner-total">
                     {dataSource.map( item => (
-                        <div className="banner-item">
+                        <div className="banner-item" key={item.id}>
                             <img className="banner-img" src={item.img} alt="" />
                             <div className="banner-text">{item.til}</div>
                         </div>

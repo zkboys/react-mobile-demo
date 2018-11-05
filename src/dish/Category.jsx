@@ -7,11 +7,13 @@ export default class Category extends Component {
     };
 
     render() {
-        const {children} = this.props;
+        const {children,categoryDataSource} = this.props;
         return (
             <div className="Category">
                 <div className="Category-title">{children}</div>
-
+                {categoryDataSource.map( item => (
+                    <li className="Category-item" key={item.id}>{item.name}</li>
+                ))}
             </div>
         );
     }
