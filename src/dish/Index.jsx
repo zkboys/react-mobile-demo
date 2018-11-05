@@ -7,7 +7,7 @@ import CartBar from './CartBar';
 import bannerImg from './img/banner.png';
 import bannerImg1 from './img/banner1.png';
 import dishItem from './img/dishitem.png';
-import './Style.css';
+import './style.css';
 
 export default  class Index extends Component {
 
