@@ -15,8 +15,8 @@ class Footer extends Component {
         const {carNum,readyBuy} = this.props;
         return (
                 <div className='footer'>
-                    {carNum}
-                    <img src={carImg} alt='' style={{background:'red'}} />
+                    <p>{carNum}</p>
+                    <div className='imgWrap'><img src={carImg} alt=''/></div>
                     <p>{readyBuy}</p>
                 </div>
         )

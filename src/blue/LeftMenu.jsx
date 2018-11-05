@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import PropTypes from 'prop-types';
+import './style.css';
 
 class LeftMenu extends Component {
     constructor(props) {
@@ -13,11 +14,13 @@ class LeftMenu extends Component {
     render() {
         const {leftMenu} = this.props;
         return (
+            <div className= 'left_menu_wrap'>
                 <ul className='leftMenu'>
                     {leftMenu.map(item=>(
                        <li>{item}</li>
                     ))}
                 </ul>
+            </div>
         )
     }
 }

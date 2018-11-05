@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import PropTypes from 'prop-types';
+import './style.css';
 
 class Nav extends Component {
     constructor(props) {
@@ -15,7 +16,7 @@ class Nav extends Component {
     render() {
         const {prev,close,all,rest} = this.props;
         return (
-                <div styleName= 'nav'>
+                <div className= 'headNav'>
                     <span>{prev}</span>
                     <span>{close}</span>
                     <span>{all}</span>
