@@ -10,7 +10,7 @@ export default class Nav extends Component{
     render(){
         const {navData} = this.props;
         return (
-            <div>
+            <div className="nav-block">
                 <ul className='nav'>
                     {navData.map(item => {
                         return (<li className='nav-item' key={item.id}>{item}</li>);
